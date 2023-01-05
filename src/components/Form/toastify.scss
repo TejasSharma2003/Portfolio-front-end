@@ -1,0 +1,24 @@
+@import "../../sass/_variables.scss";
+
+.Toastify__toast-body {
+  //   background-color: $light-orange;
+  font-size: 1.5rem !important;
+  font-family: $font-family-para !important;
+  color: $light-orange !important;
+}
+
+.Toastify__toast-container {
+  @media (max-width: 487px) {
+    // font-size: 1.5rem !important;
+    width: 90% !important;
+  }
+}
+
+.Toastify__toast {
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.05) !important;
+  @media (max-width: 487px) {
+    &:not(:last-child) {
+      margin-bottom: 2rem !important;
+    }
+  }
+}

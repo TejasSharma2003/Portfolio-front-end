@@ -1,0 +1,45 @@
+@import "../../sass/variables";
+
+.navigator {
+  display: inline-block;
+  position: relative;
+  font-size: $font-size-para;
+  // border-bottom: 1px solid transparent;
+  letter-spacing: 1px;
+  margin-top: 3rem;
+  transition: border 0.2s;
+  color: $color-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $secondary-color;
+    transform: translateY(2px);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  &:hover::before {
+    transform: translateY(0);
+    opacity: 1;
+
+    // border-bottom: 1px solid $secondary-color;
+  }
+
+  &__span {
+    color: $light-orange;
+  }
+
+  &__span > * {
+    margin-left: 0.5rem;
+    transform: translateY(2px);
+  }
+
+  @media (max-width: 669px) {
+    margin-top: 5rem;
+  }
+}

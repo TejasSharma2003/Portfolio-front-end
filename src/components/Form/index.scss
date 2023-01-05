@@ -1,0 +1,71 @@
+@import "../../sass/variables";
+
+.form {
+  margin-top: 4rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid $light-orange;
+    color: $color-black;
+    padding: 1.5rem 0.5rem;
+    width: 80%;
+
+    font-family: $font-family-para;
+    font-weight: 100;
+    font-size: $font-size-link;
+    transition: width 0.3s;
+
+    @media (max-width: 669px) {
+      text-align: center;
+      width: 100%;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &::placeholder {
+      // color: $secondary-white;
+      color: rgba($secondary-color, 0.6);
+      letter-spacing: 1px;
+      transition: all 0.2s;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+    &:focus {
+      outline: none;
+      width: 100%;
+    }
+  }
+
+  &__input-message {
+    font-family: $font-family-para;
+    font-weight: 100;
+    font-size: $font-size-link;
+    padding: 1rem 0;
+    resize: none;
+    line-height: inherit;
+  }
+
+  &__btn {
+    margin-top: 5rem;
+    background: transparent;
+    cursor: pointer;
+    padding: 0.8rem 3rem;
+    font-size: $font-size-para;
+  }
+
+  &__btn-arrow {
+    display: inline-block;
+    transform: translateY(3px);
+    margin-left: 1rem;
+  }
+}

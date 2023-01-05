@@ -1,0 +1,34 @@
+@import "../../sass/variables";
+
+.footer {
+  text-align: center;
+
+  &__social-icon-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color: $tertiary-color;
+    // color:
+    font-size: 1.5rem;
+    margin-top:4rem;
+    letter-spacing: 1px;
+  }
+
+  &__copyright-symbol-box
+  {
+    display: block;
+
+  }
+
+  &__copyright-symbol
+  {
+    transform:translateY(2px);
+
+  }
+}

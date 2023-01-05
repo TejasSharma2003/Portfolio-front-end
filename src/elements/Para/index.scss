@@ -1,0 +1,51 @@
+@import "../../sass/variables";
+
+.para {
+  font-size: $font-size-para;
+  color: $color-black;
+  letter-spacing: 1px;
+  text-align: left;
+
+  @media (max-width: 669px) {
+    text-align: center;
+  }
+
+  &--hero {
+    width: 100%;
+
+    @media (min-width: 669px) {
+      width: 80%;
+    }
+
+    @media (min-width: 1027px) {
+      width: 60%;
+    }
+
+    // @media (max-width: 669px) {
+    // }
+  }
+
+  &--about {
+    // width: 40%;
+  }
+
+  &--dexter {
+    margin-bottom: 5rem;
+  }
+
+  &--project {
+    margin-top: 2.5rem;
+
+    @media (min-width: 669px) {
+      width: 80%;
+    }
+
+    @media (min-width: 1027px) {
+      width: 70%;
+    }
+
+    @media (min-width: 1179px) {
+      width: 65%;
+    }
+  }
+}

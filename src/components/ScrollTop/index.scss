@@ -1,0 +1,62 @@
+@import "../../sass/variables";
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: $light-orange;
+  border: none;
+  border-radius: 50px;
+  font-size: 3rem;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+  box-shadow: 0 0.3rem 1rem rgba($color-black, 0.2);
+  transform: translateX(10rem);
+  z-index: 1000;
+
+  &--show {
+    animation: decreaseOpacity 1s linear 4s forwards;
+    transform: translateX(0);
+  }
+
+  @media (min-width: 1179px) {
+    &--show:hover {
+      background-color: $dark-orange;
+      animation: increaseOpacity linear forwards;
+    }
+
+    &--show:hover &__icon {
+      transform: translateY(-4px);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    transition: transform 0.3s;
+    transform: translateY(2px);
+  }
+}
+
+@keyframes decreaseOpacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+@keyframes increaseOpacity {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}

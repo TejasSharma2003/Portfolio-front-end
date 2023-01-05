@@ -1,0 +1,49 @@
+@import "../../sass/variables";
+
+.btn {
+  &,
+  &:visited,
+  &:link {
+    display: inline-block;
+    border: 1px solid $light-orange;
+    border-radius: 50px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+    color: $color-black;
+    font-size: $font-size-link;
+  }
+  &--fadeup {
+    animation: fadeup 0.4s ease-in-out forwards;
+  }
+
+  &-navbar {
+    padding: 0.5rem 2.5rem;
+    letter-spacing: 1px;
+  }
+
+  &-hero {
+    font-size: $font-size-link;
+    padding: 0.5rem 3rem;
+  }
+
+  &-project {
+    margin-top: 4rem;
+    padding: 0.6rem 1.1rem;
+  }
+
+  &:hover {
+    background-color: $dark-orange;
+    color: $primary-color;
+  }
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}

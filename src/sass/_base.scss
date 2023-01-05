@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit:wght@600;700&family=Open+Sans:wght@700;800&family=Roboto:wght@400;500&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+
+  @media (max-width: 896px) {
+    font-size: 58%;
+  }
+
+  @media (max-width: 669px) {
+    font-size: 56%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  background-color: $primary-color;
+  color: $color-black;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}

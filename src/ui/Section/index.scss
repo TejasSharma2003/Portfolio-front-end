@@ -1,0 +1,79 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.section {
+  padding: 12rem 0;
+  background-color: $primary-color;
+  position: relative;
+  // min-height: 100vh;
+
+  &--light {
+    // background-color: $tertiary-color;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @media (max-width: 669px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__text-box {
+    width: 45%;
+    @media (max-width: 669px) {
+      width: 100%;
+    }
+
+    @media (max-width: 669px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-h1;
+    font-weight: 600;
+    font-size: 7rem;
+    position: relative;
+    display: inline-block;
+    margin-left: 3rem;
+    color: $secondary-color;
+    letter-spacing: -1px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      background-color: $light-orange;
+      transform: translate(-2.3rem, -3.4rem);
+
+      @media (max-width: 669px) {
+        transform: translate(-3rem, -3.3rem);
+      }
+    }
+  }
+
+  &-footer {
+    padding: 8rem 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba($tertiary-color, 0.2);
+      width: 30%;
+      height: 2px;
+    }
+  }
+
+  @media (max-width: 669px) {
+    padding: 9rem 0;
+  }
+}

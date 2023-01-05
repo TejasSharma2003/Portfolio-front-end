@@ -1,0 +1,13 @@
+@import "../../sass/variables";
+
+.logo {
+  display: inline-block;
+
+  &__img {
+    width: 80%;
+    vertical-align: middle;
+    @media (max-width: 896px) {
+      width: 60%;
+    }
+  }
+}

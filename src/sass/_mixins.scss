@@ -1,0 +1,12 @@
+// Mobile: 411 px
+// Tablet: 768
+// Laptop: 1366
+// High-res laptop or desktop: 1920 x 1080
+
+@mixin screen-manager($breakpoint) {
+  @if ($breakpoint== "tablet") {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}

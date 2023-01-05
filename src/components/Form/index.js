@@ -29,7 +29,7 @@ function Form() {
     try {
       const res = await axios({
         method: "post",
-        url: "https://itsmetejas.vercel.app/sendmail",
+        url: "https://itsmetejas-api.onrender.com/sendmail",
         data: formData,
       });
       toast.success(res.data.message);

@@ -7,10 +7,10 @@ import Container from "../../ui/Container";
 
 import SocialIcon from "../../elements/SocialIcon";
 
-import { CiTwitter } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
 
 function Form() {
   const year = new Date().getFullYear();
@@ -21,13 +21,13 @@ function Form() {
         <footer className="footer">
           <Logo />
           <div className="footer__social-icon-container">
-            <SocialIcon directTo="#">
-              <CiTwitter />
+            <SocialIcon directTo="https://github.com/TejasSharma2003">
+              <AiOutlineGithub />
             </SocialIcon>
-            <SocialIcon directTo="#">
+            <SocialIcon directTo="mailto:sharmatejas000@gmail.com">
               <CiMail />
             </SocialIcon>
-            <SocialIcon directTo="#">
+            <SocialIcon directTo="https://www.linkedin.com/in/tejas-sharma-175287228">
               <CiLinkedin />
             </SocialIcon>
           </div>

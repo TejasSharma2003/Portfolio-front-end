@@ -49,14 +49,11 @@ function Home(props) {
         <div ref={containerRef} className="hero__text-area">
           <h1 className="hero__intro">Hi. I'm Tejas.</h1>
           <Para classes="para--hero">
-            I'm a Web & Mobile Designer and a Best-Selling Instructor. I'm not
-            currently taking on new projects but email me and I will direct you
-            towards capable Web Designers.
+            I'm a Web Developer and Designer. Developing and Designing things
+            from the scratch to ground up fascinates me a lot. send me an email.
+            If we are a good fit, I will give you a time and cost estimate.
           </Para>
-          <Button
-            directTo="#about"
-            classes="btn-hero hero__btn btn--fadeup"
-          >
+          <Button directTo="#about" classes="btn-hero hero__btn btn--fadeup">
             Explore
             <span className="hero__btn-span">
               <AiOutlineArrowDown />

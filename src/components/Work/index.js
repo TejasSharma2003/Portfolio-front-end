@@ -7,7 +7,6 @@ import Button from "../../elements/Button";
 import { BsArrowRight } from "react-icons/bs";
 import Para from "../../elements/Para";
 
-
 function Work(props) {
   return (
     <div className="project__row">
@@ -23,7 +22,11 @@ function Work(props) {
         })}
 
         <Para classes="para--project">{props.description}</Para>
-        <Button directTo={props.sourceCode} classes="btn-project">
+        <Button
+          target="_blank"
+          directTo={props.sourceCode}
+          classes="btn-project"
+        >
           See the Project{" "}
           <span className="project__arrow-icon">
             <BsArrowRight />
@@ -31,7 +34,7 @@ function Work(props) {
         </Button>
       </div>
       <div className="project__img-box">
-        <img className="project__img" src={props.img} alt='Project-img' />
+        <img className="project__img" src={props.img} alt="Project-img" />
       </div>
     </div>
   );

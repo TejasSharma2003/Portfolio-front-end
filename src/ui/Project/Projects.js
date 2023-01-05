@@ -10,7 +10,7 @@ const works = [
       "Hunger is a web application that shows the desired recipes with the help of the forkify API.",
     sourceCode: "https://github.com/TejasSharma2003/Hunger",
     // liveSite: "https://hungerwebapp.netlify.app/",
-    tags: ["Reactjs", "Web-development", "Concept",'API'],
+    tags: ["Reactjs", "Web-development", "Concept", "API"],
     timeLine: "Latest work",
   },
   {
@@ -18,10 +18,10 @@ const works = [
     imgSrc: Project2,
     name: "Wordle Game",
     description:
-      "The project is not my idea but I got very fascinated with this famous Worlde game so I created one. ",
+      "This project is not my idea but I got very fascinated with this famous Worlde game so I created one. ",
     sourceCode: "https://github.com/TejasSharma2003/Wordle",
     // liveSite: "https://react-wordle5.netlify.app/",
-  tags: ["Reactjs", "Web-App", "Concept"],
+    tags: ["Reactjs", "Web-App", "Concept"],
     timeLine: "Latest work",
   },
 ];

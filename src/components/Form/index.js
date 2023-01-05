@@ -25,7 +25,7 @@ function Form() {
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
-    toast("Sending your mail Please wait...");
+    toast("Sending your mail Please wait it might take some time");
     try {
       const res = await axios({
         method: "post",

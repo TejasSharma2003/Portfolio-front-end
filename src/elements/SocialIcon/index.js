@@ -3,7 +3,7 @@ import "./index.scss";
 
 function SocialIcon(props) {
   return (
-    <a href={props.directTo} className="social-icon">
+    <a target="_blank" href={props.directTo} className="social-icon">
       <span className="social-icon-span">{props.children}</span>
     </a>
   );

@@ -3,7 +3,7 @@
 .para {
   font-size: $font-size-para;
   color: $color-black;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   text-align: left;
 
   @media (max-width: 669px) {
@@ -26,6 +26,7 @@
   }
 
   &--about {
+
     // width: 40%;
   }
 

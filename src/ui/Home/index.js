@@ -61,7 +61,7 @@ function Home(props) {
           </Button>
         </div>
         <div data-aos="zoom-in-left" className="hero__img-box">
-          <img className="hero__img" src={me} />
+          <img alt="me" className="hero__img" src={me} />
         </div>
       </section>
     </Container>

@@ -25,12 +25,18 @@ function Form() {
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
+    const { name, message, email } = formData;
+    if (!email || !name || !message) {
+      toast.error("Please give your credientials.");
+      return;
+    }
+
     toast("Sending your mail Please wait it might take some time");
     try {
       const res = await axios({
         method: "post",
         url: "https://itsmetejas-api.onrender.com/sendmail",
-        data: formData,
+        data: { name, email, message },
       });
       toast.success(res.data.message);
     } catch (err) {

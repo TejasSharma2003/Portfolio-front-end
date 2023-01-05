@@ -42,7 +42,7 @@ function App() {
       <Footer />
       <ScrollTop showSrollTop={showSrollTop} />
       <ToastContainer
-        position="bottom-left"
+        position="bottom-center"
         autoClose={3000}
         hideProgressBar
         newestOnTop={false}

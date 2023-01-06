@@ -30,8 +30,7 @@ function Form() {
       toast.error("Please give your credientials.");
       return;
     }
-
-    toast("Sending your mail Please wait it might take some time");
+    toast("Please wait your requrest is in Progress.");
     try {
       const res = await axios({
         method: "post",

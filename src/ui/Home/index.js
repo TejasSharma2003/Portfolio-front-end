@@ -10,10 +10,10 @@ import Para from "../../elements/Para";
 
 import { AiOutlineArrowDown } from "react-icons/ai";
 
+import MyImage from "../../components/MyImage";
+
 function Home(props) {
   const containerRef = useRef();
-
-  // const animation = "fade-up";
 
   const options = {
     root: null,
@@ -60,8 +60,8 @@ function Home(props) {
             </span>
           </Button>
         </div>
-        <div data-aos="zoom-in-left" className="hero__img-box">
-          <img alt="me" className="hero__img" src={me} />
+        <div className="hero__img-box">
+          <MyImage src={me} alt="me" />
         </div>
       </section>
     </Container>

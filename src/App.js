@@ -16,6 +16,7 @@ import AOS from "aos";
 import { ToastContainer } from "react-toastify";
 import "aos/dist/aos.css";
 import "react-toastify/dist/ReactToastify.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function App() {
   const [showSrollTop, setShowScrollTop] = useState(false);

@@ -130,14 +130,13 @@
     position: fixed;
     width: 5rem;
     height: 5rem;
+    border-radius: 50%;
     background-color: $primary-color;
     transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
-    opacity: 0;
     z-index: 200;
     visibility: hidden;
 
     &--active {
-      opacity: 1;
       visibility: visible;
       transform: scale(50);
     }

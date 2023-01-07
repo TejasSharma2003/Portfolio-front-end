@@ -41,28 +41,3 @@ function MobileNav() {
 }
 
 export default MobileNav;
-
-// <div
-// onClick={onClickHandler}
-// className={`navbar__mobile ${showNavLinksClass}`}
-// >
-// <div className="navbar__bg"></div>
-
-// <ul className="navbar__mobile-links">
-//   <li className="navbar__mobile-link">
-//     <a href="#about">About</a>
-//   </li>
-//   <li className="navbar__mobile-link">
-//     <a href="#dexter">Dextirity</a>
-//   </li>
-//   <li className="navbar__mobile-link">
-//     <a href="#projects">Projects</a>
-//   </li>
-//   <li className="navbar__mobile-link">
-//     <a href="#contact">Contact</a>
-//   </li>
-// </ul>
-// <div onClick={onClickHandler} className="navbar__menu ">
-//   <div className={`navbar__hamburger ${animateMenuClass}`}></div>
-// </div>
-// </div>

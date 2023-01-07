@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Tag from "../../elements/Tag";
-import Panarama from "../Panarama";
 import Heading from "../../elements/Heading";
 import Button from "../../elements/Button";
-import { BsArrowRight } from "react-icons/bs";
 import Para from "../../elements/Para";
-import MyImage from "../MyImage";
+
+import { BsArrowRight } from "react-icons/bs";
+
+import Panarama from "../Panarama";
 
 function Work(props) {
   return (
@@ -35,8 +36,8 @@ function Work(props) {
         </Button>
       </div>
       <div className="project__img-box">
-        <MyImage src={props.img} alt="Project-img" />
-        {/* <img className="project__img" src={props.img} alt="Project-img" /> */}
+        {/* <MyImage src={props.img} alt="Project-img"  */}
+        <img className="project__img" src={props.img} alt="Project-img" />
       </div>
     </div>
   );

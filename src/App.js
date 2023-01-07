@@ -1,12 +1,11 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect } from "react";
 
 import "./main.scss";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ScrollTop from "./components/ScrollTop";
 
-import Hero from "./ui/Home";
+import Hero from "./ui/Hero";
 import About from "./ui/About";
 import Dexter from "./ui/Dexter";
 import Project from "./ui/Project";
@@ -19,12 +18,6 @@ import "react-toastify/dist/ReactToastify.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 function App() {
-  const [showSrollTop, setShowScrollTop] = useState(false);
-
-  const visibility = (value) => {
-    setShowScrollTop(value);
-  };
-
   useEffect(() => {
     AOS.init({
       once: true,
@@ -35,13 +28,12 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <Hero visibility={visibility} />
+      <Hero />
       <About />
       <Dexter />
       <Project />
       <Contact />
       <Footer />
-      <ScrollTop showSrollTop={showSrollTop} />
       <ToastContainer
         position="bottom-center"
         autoClose={3000}

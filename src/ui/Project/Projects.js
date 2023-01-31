@@ -18,7 +18,7 @@ const works = [
     imgSrc: Project2,
     name: "Wordle Game",
     description:
-      "This project is not my idea but I got very fascinated with this famous Worlde game so I created one. ",
+      "A game which is clone of popular wordle game where we need to guess the correct word. ",
     sourceCode: "https://github.com/TejasSharma2003/Wordle",
     // liveSite: "https://react-wordle5.netlify.app/",
     tags: ["Reactjs", "Web-App", "Concept"],

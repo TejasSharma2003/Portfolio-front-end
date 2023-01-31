@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from "react";
 import "./index.scss";
 
 import me from "../../assets/Me.png";
-import placeHolderMe from "../../assets/Me-placeholder.jpg";
 
 import Container from "../Container";
 
@@ -11,7 +10,6 @@ import Para from "../../elements/Para";
 
 import { AiOutlineArrowDown } from "react-icons/ai";
 
-import MyImage from "../../components/MyImage";
 import ScrollTop from "../../components/ScrollTop";
 
 function Hero() {
@@ -51,7 +49,7 @@ function Hero() {
             <h1 className="hero__intro">Hi. I'm Tejas.</h1>
             <Para classes="para--hero">
               I'm a Web Developer and Designer. Developing and Designing things
-              from the scratch to ground up fascinates me a lot. send me an
+              from the scratch to ground up fascinates me a lot. Send me an
               email. If we are a good fit, I will give you a time and cost
               estimate.
             </Para>
@@ -63,7 +61,7 @@ function Hero() {
             </Button>
           </div>
           <div className="hero__img-box">
-            <MyImage src={me} alt="me" placeHolderMe={placeHolderMe} />
+            <img className="hero__img" src={me} alt="me"/>
           </div>
         </section>
       </Container>

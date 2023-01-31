@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
-    transform:translateY(6rem);
+    transform: translateY(6rem);
 
     @media (max-width: 669px) {
       align-items: center;
@@ -50,11 +50,12 @@
 
   &__img-box {
     position: relative;
-    width: 100%;
-    z-index: 10;
+    width: 70%;
+    z-index: 20;
 
-    @media (min-width: 1179px) {
-      width: 55%;
+    @media (max-width:735px) {
+      transform: translateY(3rem);
+      
     }
 
     @media (max-width: 896px) {
@@ -63,7 +64,6 @@
 
     @media (max-width: 669px) {
       width: 65%;
-      // transform: translateY(9rem);
     }
 
     @media (max-width: 450px) {
@@ -73,18 +73,9 @@
     @media (max-width: 326px) {
       width: 100%;
     }
-
-    // @media (max-width: 1126px) {
-    //   width: 75%;
-    //   transform: translateY(-5rem);
-    // }
-
-    // @media (max-width: 869px) {
-    //   width: 75%;
-    //   transform: translateY(-5rem);
-    // }
   }
-  // &__img {
-  //   width: 100%;
-  // }
+
+  &__img {
+    width: 100%;
+  }
 }

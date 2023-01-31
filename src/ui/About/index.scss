@@ -1,12 +1,8 @@
-.about
+#about
 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-
-    &__text-box
-    {
-        width: 40%;
-        
-    }
+    position: relative;
+    z-index: -1;
 }

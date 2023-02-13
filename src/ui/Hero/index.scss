@@ -5,14 +5,14 @@
   display: flex;
   justify-content: space-between;
   // align-items: center;
-  padding: 13rem 0;
-  min-height: 70vh;
+  padding-top: 13rem;
+  // min-height: 70vh;
   transform: translateY(-5rem);
   // position: relative;
   // z-index: -4;
   @media (max-width: 669px) {
     flex-direction: column;
-    padding: 7rem 0 2rem 0;
+    padding: 7rem 0 3rem 0;
     transform: translateY(0rem);
     align-items: center;
   }
@@ -53,9 +53,8 @@
     width: 70%;
     z-index: 20;
 
-    @media (max-width:735px) {
+    @media (max-width: 735px) {
       transform: translateY(3rem);
-      
     }
 
     @media (max-width: 896px) {

@@ -9,6 +9,7 @@
   margin-top: 3rem;
   transition: border 0.2s;
   color: $color-black;
+  cursor: pointer;
 
   &::before {
     content: "";

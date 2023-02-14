@@ -61,7 +61,7 @@ function Hero() {
             </Button>
           </div>
           <div className="hero__img-box">
-            <img className="hero__img" src={me} alt="me"/>
+            <img className="hero__img" src={me} alt="me" />
           </div>
         </section>
       </Container>

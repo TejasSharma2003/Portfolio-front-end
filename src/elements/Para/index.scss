@@ -36,17 +36,6 @@
 
   &--project {
     margin-top: 2.5rem;
-
-    @media (min-width: 669px) {
-      width: 80%;
-    }
-
-    @media (min-width: 1027px) {
-      width: 70%;
-    }
-
-    @media (min-width: 1179px) {
-      width: 65%;
-    }
+    padding-right: 3rem;
   }
 }

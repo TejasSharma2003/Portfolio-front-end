@@ -6,10 +6,11 @@ import Button from "../../elements/Button";
 import Para from "../../elements/Para";
 
 import { BsArrowRight } from "react-icons/bs";
-
 import Panarama from "../Panarama";
 
 function Work(props) {
+  const imageSrc = `/${props.img}`;
+
   return (
     <div className="project__row">
       <div className="project__text-box">
@@ -35,9 +36,9 @@ function Work(props) {
           </span>
         </Button>
       </div>
+      
       <div className="project__img-box">
-        {/* <MyImage src={props.img} alt="Project-img"  */}
-        <img className="project__img" src={props.img} alt="Project-img" />
+        <img className="project__img" src={imageSrc} alt={props.name} />
       </div>
     </div>
   );

@@ -20,9 +20,10 @@ function Project() {
         sourceCode={project.sourceCode}
         tags={project.tags}
         timeLine={project.timeLine}
+
       />
     );
-  });
+  }); 
 
   return (
     <Section id="projects" classes="section--light">
@@ -30,7 +31,6 @@ function Project() {
         <div className="project">
           <SectionTitle>Projects.</SectionTitle>
           {projects}
-          {/* <Navigator directTo="#contact">Contact</Navigator> */}
         </div>
       </Container>
     </Section>

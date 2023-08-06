@@ -39,6 +39,12 @@ function Form() {
             <AiOutlineCopyrightCircle className="footer__copyright-symbol" />{" "}
             TEJAS SHARMA <span>{year}</span>
           </span>
+          <span>
+            Inspiration{" "}
+            <a href="https://www.vakoshvili.com/" target="_blank">
+              here
+            </a>
+          </span>
         </p>
       </Container>
     </Section>

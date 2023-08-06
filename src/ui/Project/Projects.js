@@ -4,7 +4,7 @@ const works = [
     imgSrc: "cosmetologist-portfolio.png",
     description:
       "This portfolio showcases the work of a talented cosmetologist, highlighting their expertise and achievements in the beauty industry. The application is built using Next.js, Tailwind CSS and Contentful CMS,The Contentful CMS ensures easy management and updates for the portfolio content",
-    sourceCode: "https://github.com/TejasSharma2003/Hunger",
+    sourceCode: "https://nainamakeover.vercel.app/",
     tags: ["Nextjs", "Tailwind Css", "Concept", "API", "Contentful CMS"],
     timeLine: "Latest work",
   },
@@ -14,7 +14,7 @@ const works = [
     imgSrc: "blogging-web.png",
     description:
       "This project, developed using Next.js and Tailwind CSS, offers a seamless user experience with smooth animations courtesy of Framer Motion. The app's backend is built with Strapi. User authentication and security are handled through Next Auth. MongoDB serves as the database, ensuring robust and scalable data storage.",
-    sourceCode: "https://github.com/TejasSharma2003/Hunger",
+    sourceCode: "https://exampleportfoliowithblog.vercel.app/",
     tags: [
       "Nextjs",
       "Tailwind Css",
@@ -31,7 +31,7 @@ const works = [
     imgSrc: "connect-app.png",
     description:
       "Discover the power of modern web development with Connect's landing page. This website is crafted using cutting-edge technologies, showcasing the potential of React.js, SASS, and responsive design",
-    sourceCode: "https://github.com/TejasSharma2003/Hunger",
+    sourceCode: "https://connectchatapp.netlify.app/",
     tags: ["Reactjs", "Web-development", "Concept", "SASS", "Figma"],
     timeLine: "Latest work",
   },
@@ -41,7 +41,7 @@ const works = [
     imgSrc: "hunger-app.png",
     description:
       "Hunger is a web application that shows the desired recipes with the help of the forkify API.",
-    sourceCode: "https://github.com/TejasSharma2003/Hunger",
+    sourceCode: "https://hungerwebapp.netlify.app/",
     tags: ["Reactjs", "Web-development", "Concept", "API"],
     timeLine: "Latest work",
   },
@@ -51,7 +51,7 @@ const works = [
     imgSrc: "rental-service.png",
     description:
       "This web application demonstrates key concepts in web development, emphasizing responsiveness and user-friendly design. With its innovative use of React.js, the Landing Page offers an interactive and engaging experience, making it a perfect example of cutting-edge web development practices",
-    sourceCode: "https://github.com/TejasSharma2003/Hunger",
+    sourceCode: "https://github.com/TejasSharma2003/Rental",
     tags: ["Reactjs", "Web-development", "Concept", "Concept", "Responsive"],
     timeLine: "Latest work",
   },
